@@ -5,7 +5,7 @@
 // and output a report of the amount of retroactive pay due 
 // the employee, the new annual salary, and the new monthly 
 // salary using the given format.
-// Complete the gien code for the main function
+// Complete the given code for the main function
 
 #include <iostream>
 
