@@ -5,7 +5,7 @@
 Workers at a particular company have won a 7.6% pay increase retroactive for six months. 
 
 ## Directions
-After accepting the Lab3 assignment, clone your Lab3 repository to your virtual machine, add your solution code and test it against the correct results that match the interface prototype example shown below. Once any errors are corrected and the program is working correctly, push it back to your repositiry which will spin up a test of your solution code. Once it has passed the auto-test you will need to submit it to Canvas under the Lab2 assignment.
+After accepting the Lab3 assignment, clone your Lab3 repository to your virtual machine, add your solution code and test it against the correct results that match the interface prototype example shown below. Once any errors are corrected and the program is working correctly, push it back to your repositiry which will spin up a test of your solution code. Once it has passed the auto-test you will need to submit it to Canvas under the Lab3 assignment.
 
 ## Interface Prototype Example
 
