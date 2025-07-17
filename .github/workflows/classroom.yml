@@ -1,6 +1,6 @@
 name: Autograding Tests
 'on':
-- workflow_dispatch
+- push
 - repository_dispatch
 permissions:
   checks: write
@@ -15,29 +15,47 @@ jobs:
       uses: actions/checkout@v4
     - name: Test 1
       id: test-1
-      uses: classroom-resources/autograding-command-grader@v1
+      uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: Test 1
-        setup-command: g++ -o Lab3 Lab3.cpp
+        setup-command: g++ Lab3.cpp -o Lab3
         command: "./Lab3"
+        input: '32780'
+        expected-output: |-
+          Retroactive pay due is $1245.64
+          New annual salary is $35271.28
+          New monthly salary is $2939.27
+        comparison-method: contains
         timeout: 1
         max-score: 5
     - name: Test 2
       id: test-2
-      uses: classroom-resources/autograding-command-grader@v1
+      uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: Test 2
-        setup-command: g++ -o Lab3 Lab3.cpp
+        setup-command: g++ Lab3.cpp -o Lab3
         command: "./Lab3"
+        input: '52500'
+        expected-output: |-
+          Retroactive pay due is $1995.00
+          New annual salary is $56490.00
+          New monthly salary is $4707.50
+        comparison-method: contains
         timeout: 1
         max-score: 5
     - name: Test 3
       id: test-3
-      uses: classroom-resources/autograding-command-grader@v1
+      uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: Test 3
-        setup-command: g++ -o Lab3 Lab3.cpp
+        setup-command: g++ Lab3.cpp -o Lab3
         command: "./Lab3"
+        input: '88250'
+        expected-output: |-
+          Retroactive pay due is $3353.50
+          New annual salary is $94957.00
+          New monthly salary is $7913.08
+        comparison-method: contains
         timeout: 1
         max-score: 5
     - name: Autograding Reporter
